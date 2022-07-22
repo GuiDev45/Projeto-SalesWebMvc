@@ -1,0 +1,49 @@
+﻿<!--Essa é página Razor gerada automaticamente ela já dispõe alguns default-->
+<!--IEnumerable é uma operação bem genérica, não tem a opção de adicionar ou remover, 
+é só uma coleção básica para conseguir percorrer a lista.-->
+<!--Lembrando que é o DepartmentsController que chamou essa página-->
+@model IEnumerable<SalesWebMvc.Models.Department>
+
+@{
+    ViewData["Title"] = "Departments";
+}
+
+<h1>Departments</h1>
+
+<p>
+    <!--tag helper asp-action, ainda não tem a ação create em DepartmentsController, então vai ficar quebrada-->
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table"><!--Vai ser criada uma tabela normal, com os departamentos-->
+    <thead>
+        <tr>
+            <th>
+                <!--Esse model é a lista, e essa operação com expressão lambda serve para selecionar qual dado do model vai exibir-->
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <!--Aqui é parecido com o DisplayNameFor, mas é uma outra ação chamada DisplayFor, 
+                o item usado é do laço foreach e a coleção é o model/lista-->
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

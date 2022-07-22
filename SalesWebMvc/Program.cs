@@ -22,8 +22,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");//É como vai chamar na url Home ou Home/Index ambos vão para a mesma página,
-                                                       //esse caminho é para chamar o controlador, é o controlador/Controllers
-                                                       //que vai chamar o caminho para a página.
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

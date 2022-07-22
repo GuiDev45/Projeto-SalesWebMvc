@@ -4,7 +4,6 @@ using System.Diagnostics;
 
 namespace SalesWebMvc.Controllers
 {
-    //Todo controlador é uma subclasse de Controller
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -14,17 +13,13 @@ namespace SalesWebMvc.Controllers
             _logger = logger;
         }
 
-        //IActionResult é um tipo genérico para todo resultado de uma ação, existem vários tipos específicos, olhar pdf.
-        //Usar o IActionResult torna mais flexível, é melhor.
         public IActionResult Index()
         {
-            return NotFound();//View é um método específico do ViewResult/IActionResult - tipo genérico.
-            //Outro exemplo return NotFound(); serve para dizer que não foi encontrado, outro auxílio de resposta.
+            return View();
         }
 
-        public IActionResult Privacy()//Essa ação serve apenas para a página Privacy.
+        public IActionResult Privacy()
         {
-            ViewData["TESTE"] = "ViewData do HomeController";
             return View();
         }
 
