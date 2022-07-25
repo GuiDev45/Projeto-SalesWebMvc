@@ -8,7 +8,7 @@ using SalesWebMvc.Data;
 #nullable disable
 
 namespace SalesWebMvc.Migrations
-{//Esse arquivo mostra como está a base de dados no momento.
+{//Esse arquivo mostra como esta a base de dados no momento.
     [DbContext(typeof(SalesWebMvcContext))]
     partial class SalesWebMvcContextModelSnapshot : ModelSnapshot
     {
