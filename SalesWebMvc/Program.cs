@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using SalesWebMvc.Data;
 using SalesWebMvc.Models;
+using SalesWebMvc.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,9 +14,12 @@ builder.Services.AddDbContext<SalesWebMvcContext>(options => options.UseSqlServe
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Bloco para popular o banco de dados.
+// Scope do SellerService.
+builder.Services.AddScoped<SellerService>();
+
 var app = builder.Build();
 
+// Bloco para popular o banco de dados.
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
