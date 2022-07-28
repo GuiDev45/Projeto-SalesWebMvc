@@ -1,0 +1,38 @@
+﻿<!--Essa View vai ter a disposição dela o objeto Seller, por esse motivo o atributo "Name" e outros campos foi reconhecido-->
+@model SalesWebMvc.Models.Seller
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Seller</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="Name" class="col-form-label mt-1"></label>
+                <input asp-for="Name" class="form-control" placeholder="Name" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="col-form-label mt-1"></label>
+                <input asp-for="Email" class="form-control" placeholder="E-mail" />
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="col-form-label mt-1"></label>
+                <input asp-for="BirthDate" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="BaseSalary" class="col-form-label mt-1"></label>
+                <input asp-for="BaseSalary" class="form-control" placeholder="Base Salary" />
+            </div>
+            <hr />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-success">
+            </div>
+        </form>
+    </div>
+</div>
+
