@@ -15,6 +15,9 @@
 # Sales Page
 ![04](https://user-images.githubusercontent.com/93011085/182177748-ea9140e0-2ff1-4325-b6c9-6604a08c593b.JPG)
 
+# Create Sales Page
+![20](https://user-images.githubusercontent.com/93011085/182179403-b8a17a14-d78c-40b2-8092-2316837bd628.JPG)
+
 # Database
 ![06](https://user-images.githubusercontent.com/93011085/182178227-1297c30c-c18d-4cae-ae00-92d7cd5e2087.JPG)
 ![05](https://user-images.githubusercontent.com/93011085/182178281-697c7ebe-59fa-47fd-a3cd-a727b58ce10a.JPG)
