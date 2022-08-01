@@ -16,6 +16,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<SellerService>();
 // Scope do DepartmentService.
 builder.Services.AddScoped<DepartmentService>();
+// Scope do SalesRecordService.
+builder.Services.AddScoped<SalesRecordService>();
 
 var app = builder.Build();
 

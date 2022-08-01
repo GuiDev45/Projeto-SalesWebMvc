@@ -18,19 +18,12 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Departments" asp-action="Index">Departments</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Departments" asp-action="Index">Departments</a></li>
                         <!--asp-controller é o que está na pasta Controllers, asp-action é o que está na pasta View/Sellers/Index-->
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Sellers" asp-action="Index">Sellers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Sellers" asp-action="Index">Sellers</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="SalesRecords" asp-action="Index">Sales</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-sm-2" type="text" placeholder="Search">
