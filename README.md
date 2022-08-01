@@ -3,7 +3,7 @@
 
 # 🛠 Technologies
 
-### - ASP.NET 6.0 - Padrão MVC
+### - ASP.NET 6.0 - MVC
 ### - Database: SQL Server (SQLEXPRESS)
 
 # Departments Page
